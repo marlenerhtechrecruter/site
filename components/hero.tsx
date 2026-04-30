@@ -18,9 +18,9 @@ export function Hero() {
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
           {/* Content */}
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            {/* Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary hover:border-primary/60 hover:bg-primary/20 transition-all cursor-pointer" asChild>
-              <a href="https://www.linkedin.com/in/marlenesouza/" target="_blank" rel="noopener noreferrer">
+            {/* Badge - Removido asChild do div e movido o className para o link */}
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary hover:border-primary/60 hover:bg-primary/20 transition-all cursor-pointer">
+              <a href="https://www.linkedin.com/in/marlenesouza/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                 <Linkedin className="h-4 w-4" />
                 <span>+222.880 seguidores no LinkedIn</span>
               </a>
@@ -41,7 +41,7 @@ export function Hero() {
               análise profissional + posicionamento no LinkedIn para acelerar sua recolocação.
             </p>
 
-            {/* CTAs */}
+            {/* CTAs - Removido asChild dos botões */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button size="lg" className="gap-2 px-8 text-base font-semibold" asChild>
                 <a href="https://wa.me/5511971725371?text=Ol%C3%A1%20Maah!%20Vim%20pelo%20site%20e%20quero%20come%C3%A7ar%20minha%20transforma%C3%A7%C3%A3o!" target="_blank" rel="noopener noreferrer">
